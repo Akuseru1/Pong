@@ -1,25 +1,30 @@
 package jframe;
 
-import java.awt.Color;
 import javax.swing.*;
-import javax.swing.JOptionPane;
 
-public class Jframe {
 
-    public static void main(String[] args) {
+public class Jframe extends JFrame {
 
-        String casado;
+    public Jframe() {
+        super("My Frame");
 
-        JFrame window = new JFrame();
-        window.setSize(640, 480);
-        window.setTitle("Pong");
-        window.setBackground(Color.BLACK);
-        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setVisible(true);
+        //you can set the content pane of the frame 
+        //to your custom class.
+        setContentPane(new DrawPane());
 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        setSize(400, 400);
+
+        setVisible(true);
     }
 
-    public static void EscogerJugador() {
+
+    public static void main(String args[]) {
+        new Jframe();
+    }
+
+    /*public static void EscogerJugador() {
         Raquetas jugador = new Raquetas();
         jugador.jugador = Integer.parseInt("ingrese si es jugador 1 o 2");
 
@@ -28,7 +33,6 @@ public class Jframe {
         } else {
             jugador.jugador2 = 2;
         }
-    }
+    }*/
 
 }
-
