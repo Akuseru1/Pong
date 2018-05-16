@@ -1,12 +1,14 @@
+
 package jframe;
 
-import javax.swing.JFrame;
+
+
 public class Bola {
-
-    float x = 320;
-    float y = 240;
-
-    public static void mostrar() {
-    
-    }
+   public int POSX=300;
+   public int POSY=150;
+   public int velx=0;
+   public int vely=0;
+   
+  
+   
 }

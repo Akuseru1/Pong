@@ -3,10 +3,14 @@ package jframe;
 
 
 public class Raquetas {
-    int jugador;
-    int jugador1;
-    int jugador2;
     
+    int POSY=150;
+    int vel=0;
+    int POSXIZ=20;
+    int POSXDER=590;
+    
+    
+
     
    
 }
